@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+    <configuration>
+        <date-format>yyyy-MM-dd HH:mm:ss</date-format>
+        <!--<wildcard>true</wildcard>-->
+        <!--<trim-strings>false</trim-strings>-->
+        <map-null>false</map-null>
+        <map-empty-string>false</map-empty-string>
+
+        <!--&lt;!&ndash; 自定义的枚举与Integer转换器, 下节介绍 &ndash;&gt;-->
+        <custom-converters>
+            <converter type="com.imooc.sell.converter.EnumIntegerBiDirectionalDozerConverter">
+                <class-a>java.lang.Enum</class-a>
+                <class-b>java.lang.Integer</class-b>
+            </converter>
+        </custom-converters>
+
+    </configuration>
+</mappings>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+    <mapping date-format="yyyy-MM-dd" >
+        <class-a>com.imooc.sell.dataobject.OrderDetail</class-a>
+        <class-b>com.imooc.sell.dto.OrderDetail2</class-b>
+
+    </mapping>
+    <mapping>
+        <class-a>com.imooc.sell.form.OrderForm</class-a>
+        <class-b>com.imooc.sell.dto.OrderDTO</class-b>
+
+        <field>
+            <a>name</a>
+            <b>buyerName</b>
+        </field>
+        <field>
+            <a>phone</a>
+            <b>buyerPhone</b>
+        </field>
+        <field>
+            <a>address</a>
+            <b>buyerAddress</b>
+        </field>
+        <field>
+            <a>openid</a>
+            <b>buyerOpenid</b>
+        </field>
+
+
+
+
+    </mapping>
+</mappings>
